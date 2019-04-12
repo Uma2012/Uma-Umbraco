@@ -1,0 +1,126 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Article>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "SiteLayout.cshtml";
+}
+
+
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <nav aria-label="sektionsnavigering" id="sectionNav">
+
+            <!-- top level active -->
+            <div class="sectionNav">
+              <a class="sectionNav-parent" href="#">Jobbsökare</a>
+              <ul class="sectionNav-list">
+                <li class="sectionNav-item sectionNav-item--active">
+                  <a href="#" class="sectionNav-link sectionNav-link--active">Ekonomiskt stöd</a>
+                  <ul id="101" class="childNav">
+                    <li class="childNav-item"><a href="Sample" class="childNav-link">Sample Page</a>
+                    </li>
+                    <li class="childNav-item"><a href="Start" class="childNav-link">Start Page</a></li>
+                  </ul>
+                </li>
+                <li class="sectionNav-item"><a href="#" class="sectionNav-link">Att söka arbete</a></li>
+                <li class="sectionNav-item"><a href="#" class="sectionNav-link">Andra berättar</a></li>
+                <li class="sectionNav-item"><a href="#" class="sectionNav-link">Vanliga frågor</a></li>
+                <li class="sectionNav-item sectionNav-item--hasChildren"><a href="#" class="sectionNav-link">Seminarier</a></li>
+                <li class="sectionNav-item"><a href="#" class="sectionNav-link">Kontakt</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <main class="main main--narrow" id="main">
+        <article class="editorial">
+          <h1>@Umbraco.Field("pageTitle")</h1>
+         @Umbraco.Field("bodyText")
+          <h2>Type something</h2>
+          <p>
+            Olika brunsås dimmhöljd vemod händer färdväg sorgliga åker, samma
+            vidsträckt blev sorgliga dimma söka. Och strand från helt smultron
+            ännu oss sax dimma ännu, genom strand kom från gamla vid i vid fram,
+            kanske lax verkligen sorgliga jäst miljoner varit smultron. Som se
+            denna björnbär icke vi, bland del dimmhöljd faktor, vid olika kunde
+            där.
+          </p>
+          <h3>Strand från helt smultron</h3>
+          <p>
+            Del flera sorgliga kom söka sax del har bra precis, åker söka tid
+            dag dock nu dunge träutensilierna omfångsrik olika, samma om kanske
+            vad regn sällan dunge det. Dimmhöljd ännu kanske inom färdväg
+            ordningens smultron hela annat dag ser sorgliga, så hela sorgliga
+            kom äng och därmed.
+          </p>
+          <ul>
+            <li>Nya vi del tre flera vemod samma icke blev.pdf</li>
+            <li>Fram genom gör dock ordningens mjuka kunde som kom.pdf</li>
+            <li>
+              Dock enligt dimma bäckasiner händer sjö kanske Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Enim.
+            </li>
+            <li>Omfångsrik och söka hela upprätthållande ordningens</li>
+          </ul>
+          <p>
+            Del flera sorgliga kom söka sax del har bra precis, åker söka tid
+            dag dock nu dunge träutensilierna omfångsrik olika, samma om kanske
+            vad regn sällan dunge det. Dimmhöljd ännu kanske inom färdväg
+            ordningens smultron hela annat dag ser sorgliga, så hela sorgliga
+            kom äng och därmed</p>
+          <h3>Strand från helt smultron</h3>
+          <p>
+            Del flera sorgliga kom söka sax del har bra precis, åker söka tid
+            dag dock nu dunge träutensilierna omfångsrik olika, samma om kanske
+            vad regn sällan dunge det. Dimmhöljd ännu kanske inom färdväg
+            ordningens smultron hela annat dag ser sorgliga, så hela sorgliga
+            kom äng och därmed.
+          </p>
+          <ol>
+            <li>Nya vi del tre flera vemod samma icke blev.pdf</li>
+            <li>Fram genom gör dock ordningens mjuka kunde som kom.pdf</li>
+            <li>
+              Dock enligt dimma bäckasiner händer sjö kanske Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Illum!
+            </li>
+            <li>Omfångsrik och söka hela upprätthållande ordningens</li>
+          </ol>
+          <h2>Type something</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste!</p>
+          <ol>
+            <li>Nya vi del tre flera vemod samma icke blev.pdf</li>
+            <li>Dock enligt dimma bäckasiner händer sjö kanske</li>
+            <li>Omfångsrik och söka hela upprätthållande ordningens</li>
+          </ol>
+          <p>
+            Olika brunsås dimmhöljd vemod händer färdväg sorgliga åker, samma
+            vidsträckt blev sorgliga dimma söka. Och strand från helt smultron
+            ännu oss sax dimma ännu, genom strand kom från gamla vid i vid fram,
+            kanske lax verkligen sorgliga jäst miljoner varit smultron. Som se
+            denna björnbär icke vi, bland del dimmhöljd faktor, vid olika kunde
+            där.
+          </p>
+          <blockquote class="quote">
+            Vi kan leverera det vi ska med bättre kvalitet!
+            <footer class="quote-footer">
+              - Stefan Stenudd, Lorem ipsum dolor
+            </footer>
+          </blockquote>
+          <p>
+            Olika brunsås dimmhöljd vemod händer färdväg sorgliga åker, samma
+            vidsträckt blev sorgliga dimma söka. Och strand från helt smultron
+            ännu oss sax dimma ännu, genom strand kom från gamla vid i vid fram,
+            kanske lax verkligen sorgliga jäst miljoner varit smultron. Som se
+            <a href="#">denna björnbär</a> icke vi, bland del dimmhöljd faktor,
+            vid olika kunde där.
+          </p>
+          <footer class="meta">
+            <p>Ansvarig för sidan: Sven Svensson</p>
+            <p>
+              Senast uppdaterad:
+              <time datetime="2018-12-07 19:00">07 december 2018</time>
+            </p>
+          </footer>
+        </article>
+      </main>
+    </div>
